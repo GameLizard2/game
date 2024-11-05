@@ -30,7 +30,7 @@ DeepSpace Tactical Simulation — это текстовая игра на Python
 3. Вся игровая логика была реализована в виде консольного приложения на Python и хранится в папке src/game/console_game.py.
 4. Для сборки игры на Windows использовался инструмент PyInstaller, который позволяет создать исполняемый файл (.exe) из Python-скрипта. Процесс включал следующие шаги:
 - pip install pyinstaller
-![Скриншот 1](снимок.png)
+![Скриншот 1](скриншот 1.png)
 - После установки, производим компиляцию в .exe
 pyinstaller --onefile src/game/console_game.py
 [скриншот 2]
