@@ -157,3 +157,153 @@ python
 •	Подробный вывод результатов тестирования
 •	Точное соответствие форматированию оригинальной BASIC-версии
 Код позволяет автоматически проверить соответствие портированной версии игры оригиналу.
+Результаты выполнения тестов:
+
+
+=============================================================
+                     === Starting DeepSpace Game Tests ===                      
+=============================================================
+
+=============================================================
+Test Case: Full Game With Instructions
+Description: Полный диалог игры с просмотром инструкций
+--------------------------------------------------------------------------------
+Input sequence: ['YES', 'YES', '1', '1', '1', '1', '5']
+--------------------------------------------------------------------------------
+
+Test Status: PASS
+Test Duration: 0.001 seconds
+
+Test Output Preview:
+----------------------------------------
+
+First 5 lines of output:
+                            DEEPSPACE
+                        CREATIVE COMPUTING
+                      MORRISTOWN, NEW JERSEY
+  
+  
+  ...
+
+Last 5 lines of output:
+  5 DONE WITH SELECTION
+  
+  CHOOSE A WEAPON?
+  WEAPON SELECTION COMPLETE
+  
+
+=============================================================
+
+=============================================================
+Test Case: Different System Choice
+Description: Проверка выбора системы Deneb
+--------------------------------------------------------------------------------
+Input sequence: ['NO', 'NO', '2', '1', '5']
+--------------------------------------------------------------------------------
+
+Test Status: PASS
+Test Duration: 0.001 seconds
+
+Test Output Preview:
+----------------------------------------
+
+First 5 lines of output:
+                            DEEPSPACE
+                        CREATIVE COMPUTING
+                      MORRISTOWN, NEW JERSEY
+  
+  
+  ...
+
+Last 5 lines of output:
+  5 DONE WITH SELECTION
+  
+  CHOOSE A WEAPON?
+  WEAPON SELECTION COMPLETE
+  
+
+=============================================================
+
+=============================================================
+Test Case: Invalid Inputs Handling
+Description: Проверка обработки неверных вводов
+--------------------------------------------------------------------------------
+Input sequence: ['NO', 'NO', '4', '1', '5', '1', '1', '1', '6', '5']
+--------------------------------------------------------------------------------
+
+Test Status: PASS
+Test Duration: 0.001 seconds
+
+Test Output Preview:
+----------------------------------------
+
+First 5 lines of output:
+                            DEEPSPACE
+                        CREATIVE COMPUTING
+                      MORRISTOWN, NEW JERSEY
+  
+  
+  ...
+
+Last 5 lines of output:
+  5 DONE WITH SELECTION
+  
+  CHOOSE A WEAPON?
+  WEAPON SELECTION COMPLETE
+  
+
+=============================================================
+
+=============================================================
+Test Case: Maximum Cargo Load Test
+Description: Проверка максимальной загрузки грузового отсека
+--------------------------------------------------------------------------------
+Input sequence: ['NO', 'NO', '1', '1', '1', '1', '2', '1', '5']
+--------------------------------------------------------------------------------
+
+Test Status: PASS
+Test Duration: 0.001 seconds
+
+Test Output Preview:
+----------------------------------------
+
+First 5 lines of output:
+                            DEEPSPACE
+                        CREATIVE COMPUTING
+                      MORRISTOWN, NEW JERSEY
+  
+  
+  ...
+
+Last 5 lines of output:
+  HOW MANY?
+  REMAINING CARGO SPACE: 0
+  CARGO SPACE IS FULL
+  WEAPON SELECTION COMPLETE
+  
+=============================================================
+
+
+=============================================================
+                              === Test Summary ===                              
+=============================================================
+
+Total Tests Run: 4
+Tests Passed:      4 (100.0%)
+Tests Failed:      0 (0.0%)
+Tests Errored:     0 (0.0%)
+
+Total Test Duration: 0.005 seconds
+
+Test Results Breakdown:
+----------------------------------------
+ 1. Full Game With Instructions    - PASS
+ 2. Different System Choice        - PASS
+ 3. Invalid Inputs Handling        - PASS
+ 4. Maximum Cargo Load Test        - PASS
+
+=============================================================
+
+Final Success Rate: 100.00%
+
+=============================================================
